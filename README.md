@@ -54,3 +54,12 @@ The only limitation here is any properties with `function` values is not support
 - Since this example is using localhost http to serve files, you need to allow localhost on `ios/Runner/Info.plist` with `NSAllowsLocalNetworking` (iOS 10+). If you serve the webpage from server with https this won't be needed. By default iOS block all http pages.
 
 ```
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsLocalNetworking</key>
+    <true/>
+</dict>
+```
+
+# FAQ
+
