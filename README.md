@@ -77,3 +77,9 @@ The only limitation here is any properties with `function` values is not support
 
 **A:** I will not provide any kind of build for this example.
 ##
+
+**Q:** I want to ask question.
+
+**A:** Open new issue.
+##
+
