@@ -68,3 +68,8 @@ The only limitation here is any properties with `function` values is not support
 **A:** Not my problem.
 ##
 
+**Q:** charting_library files is missing here.
+
+**A:** It's not included, you need to add yours to this project.
+##
+
