@@ -73,3 +73,7 @@ The only limitation here is any properties with `function` values is not support
 **A:** It's not included, you need to add yours to this project.
 ##
 
+**Q:** Do you have any apk build to test/check?
+
+**A:** I will not provide any kind of build for this example.
+##
