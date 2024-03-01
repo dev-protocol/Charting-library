@@ -63,3 +63,8 @@ The only limitation here is any properties with `function` values is not support
 
 # FAQ
 
+**Q:** I don't have access to charting_library, help!
+
+**A:** Not my problem.
+##
+
