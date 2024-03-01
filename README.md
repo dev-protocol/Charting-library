@@ -46,3 +46,6 @@ After that run build_runner to generate new/updated `JsonSerializable` annotated
 ```
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
+
+The only limitation here is any properties with `function` values is not supported, as `function` is not a JSON valid value.
+
