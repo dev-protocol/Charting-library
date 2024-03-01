@@ -102,3 +102,5 @@ The only limitation here is any properties with `function` values is not support
 
 **A:** As long the packages support 2 way communication between dart and JS, Yes. Otherwise, No.
 ##
+
+**Q:** Does the chart react to theme changes?
