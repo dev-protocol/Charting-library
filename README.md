@@ -30,3 +30,5 @@ This example is using `flutter_inappwebview` for WebView and localhost, to serve
 For this example follow this method:
 
 1. Grab the dist files from step before
+2. Create folder `assets/tvchart`, and paste those files.
+3. Create folder `assets/tvchart/public`, and paste all files charting_library needed (the one needed from library_path). This is assets folder should like right now.
