@@ -117,14 +117,3 @@ The only limitation here is any properties with `function` values is not support
 
 **A:** The communication between dart and JS relies on JSON parse/decode, since function is not valid JSON value, you need to add any function value on JS side, maybe by passing message on json you could add predefined function value on JS side. If you know a better way to do this, let me know.
 ##
-
-# Screenshot
-
-## Android
-
-Android 11
-
-## iOS
-
-iOS 14.4.2 with `MaterialApp`
-
