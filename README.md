@@ -98,3 +98,7 @@ The only limitation here is any properties with `function` values is not support
 **A:** Yes, Yes, No atm.
 ##
 
+**Q:** Does this work on other WebView packages?
+
+**A:** As long the packages support 2 way communication between dart and JS, Yes. Otherwise, No.
+##
