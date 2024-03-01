@@ -26,3 +26,7 @@ You can use your own bundler/way. But if you need quick you can use method this 
 
 ## Add charting_library to flutter
 
+This example is using `flutter_inappwebview` for WebView and localhost, to serve webpage directly from assets folder. You can use other WebView packages/serve via server, if you wish.
+For this example follow this method:
+
+1. Grab the dist files from step before
