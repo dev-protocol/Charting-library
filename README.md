@@ -21,3 +21,8 @@ You can use your own bundler/way. But if you need quick you can use method this 
 
 ![chart-src](./docs/images/chart-src.png)
 
+2. Run build script `npm run build`
+3. Bundled files should be in dist folder
+
+## Add charting_library to flutter
+
