@@ -35,3 +35,5 @@ For this example follow this method:
 
 ![flutter-assets](./docs/images/flutter-assets.png)
 
+4. Add folder to your `pubspec.yaml` assets list, you need to specify all subfolder as well check example `pubspec.yaml`.
+5. Run flutter app on your devices.
