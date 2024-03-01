@@ -9,3 +9,8 @@ Before starting, read prerequisite.
 - Flutter 2.0 or newer
 - Access to charting_library v19.x (or newer)
 - (IMPORTANT) Knowledge on how to use charting_library on web
+
+# Step to build
+
+## Bundling charting_library
+
