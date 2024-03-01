@@ -14,3 +14,5 @@ Before starting, read prerequisite.
 
 ## Bundling charting_library
 
+First you need to bundle charting_library as a single page web.
+You can use your own bundler/way. But if you need quick you can use method this example use:
