@@ -87,3 +87,8 @@ The only limitation here is any properties with `function` values is not support
 
 **A:** I won't answer any question that is not related to integration chart to flutter, if you don't know how to use charting_library ask on their discord/github, not here.
 ##
+
+**Q:** It doesn't work because this example use old version of charting_library.
+
+**A:** Open new issue. I'll try to update the example with latest available lib version.
+##
