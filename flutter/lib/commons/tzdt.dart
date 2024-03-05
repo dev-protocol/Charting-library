@@ -68,3 +68,8 @@ TZDateTime tzDate(
 // Reuse formatter
 Map<String, Map<String, DateFormat>> _fmts = {};
 
+String tzFormat(
+  TZDateTime tzdt,
+  String format, {
+  String locale = 'en_US',
+}) {
