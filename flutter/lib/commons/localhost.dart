@@ -14,3 +14,6 @@ LocalhostManager get localhostManager {
 
 class LocalhostManager {
   static const int port = 8080;
+  static LocalhostManager? _instance;
+  LocalhostManager._internal();
+
