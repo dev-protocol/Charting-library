@@ -20,3 +20,12 @@ TZDateTime tzMillisecond(int millisecond) {
   return TZDateTime.fromMillisecondsSinceEpoch(tzLocation, millisecond);
 }
 
+TZDateTime tzToday([
+  int hour = 0,
+  int minute = 0,
+  int second = 0,
+  int millisecond = 0,
+  int microsecond = 0,
+]) {
+  var now = tzNow();
+
