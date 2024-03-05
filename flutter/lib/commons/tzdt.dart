@@ -16,3 +16,7 @@ TZDateTime tzSecond(int second) {
   return tzMillisecond(second * 1000);
 }
 
+TZDateTime tzMillisecond(int millisecond) {
+  return TZDateTime.fromMillisecondsSinceEpoch(tzLocation, millisecond);
+}
+
