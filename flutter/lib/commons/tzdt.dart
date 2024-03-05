@@ -8,3 +8,7 @@ void setupTZLocation() {
   setLocalLocation(tzLocation);
 }
 
+TZDateTime tzNow() {
+  return TZDateTime.now(tzLocation);
+}
+
