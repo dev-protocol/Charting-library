@@ -27,3 +27,4 @@ class LocalhostManager {
     port: port,
   );
 
+  Uri get uri => _uri.replace();
