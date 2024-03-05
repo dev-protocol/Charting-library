@@ -30,3 +30,4 @@ class LocalhostManager {
   Uri get uri => _uri.replace();
   Uri getUriWith({String? path}) => _uri.replace(path: path);
 
+  Future<void> startServer() async {
