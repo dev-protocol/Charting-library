@@ -19,3 +19,5 @@ class LocalhostManager {
 
   InAppLocalhostServer? _localhostServer;
 
+  bool get isRunning => _localhostServer?.isRunning() ?? false;
+
