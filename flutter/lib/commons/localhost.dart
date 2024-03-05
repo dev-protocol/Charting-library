@@ -31,3 +31,9 @@ class LocalhostManager {
   Uri getUriWith({String? path}) => _uri.replace(path: path);
 
   Future<void> startServer() async {
+    if (!isRunning) {
+      final server = InAppLocalhostServer(port: port);
+      _localhostServer = server;
+      await server.start();
+    }
+  }
