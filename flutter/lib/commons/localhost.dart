@@ -9,3 +9,6 @@ LocalhostManager get localhostManager {
     LocalhostManager._instance = instance;
   }
 
+  return instance;
+}
+
