@@ -29,3 +29,15 @@ TZDateTime tzToday([
 ]) {
   var now = tzNow();
 
+  return TZDateTime(
+    tzLocation,
+    now.year,
+    now.month,
+    now.day,
+    hour,
+    minute,
+    second,
+    millisecond,
+    microsecond,
+  );
+}
