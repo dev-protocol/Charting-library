@@ -37,3 +37,12 @@ class LocalhostManager {
       await server.start();
     }
   }
+
+  Future<void> stopServer() async {
+    if (isRunning) {
+      final server = _localhostServer!;
+      await server.close();
+      _localhostServer = null;
+    }
+  }
+}
