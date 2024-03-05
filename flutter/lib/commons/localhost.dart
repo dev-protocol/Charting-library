@@ -12,3 +12,4 @@ LocalhostManager get localhostManager {
   return instance;
 }
 
+class LocalhostManager {
