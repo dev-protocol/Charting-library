@@ -17,3 +17,5 @@ class LocalhostManager {
   static LocalhostManager? _instance;
   LocalhostManager._internal();
 
+  InAppLocalhostServer? _localhostServer;
+
