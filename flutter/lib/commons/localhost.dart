@@ -22,3 +22,8 @@ class LocalhostManager {
   bool get isRunning => _localhostServer?.isRunning() ?? false;
 
   final _uri = Uri(
+    scheme: 'http',
+    host: 'localhost',
+    port: port,
+  );
+
