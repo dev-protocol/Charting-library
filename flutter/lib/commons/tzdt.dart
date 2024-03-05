@@ -12,3 +12,7 @@ TZDateTime tzNow() {
   return TZDateTime.now(tzLocation);
 }
 
+TZDateTime tzSecond(int second) {
+  return tzMillisecond(second * 1000);
+}
+
