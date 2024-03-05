@@ -52,3 +52,19 @@ TZDateTime tzDate(
   int millisecond = 0,
   int microsecond = 0,
 ]) {
+  return TZDateTime(
+    tzLocation,
+    year,
+    month,
+    day,
+    hour,
+    minute,
+    second,
+    millisecond,
+    microsecond,
+  );
+}
+
+// Reuse formatter
+Map<String, Map<String, DateFormat>> _fmts = {};
+
