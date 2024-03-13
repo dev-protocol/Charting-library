@@ -798,3 +798,19 @@ class Favorites {
 
   Map<String, dynamic> toJson() => _$FavoritesToJson(this);
 }
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class TimeFrameItem {
+  final String text;
+  final String resolution;
+  final String? description;
+  final String? title;
+
+  const TimeFrameItem({
+    required this.text,
+    required this.resolution,
+    this.description,
+    this.title,
+  });
+
