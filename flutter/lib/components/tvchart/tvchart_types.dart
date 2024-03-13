@@ -820,3 +820,18 @@ class TimeFrameItem {
   Map<String, dynamic> toJson() => _$TimeFrameItemToJson(this);
 }
 
+@immutable
+@JsonSerializable(includeIfNull: false)
+class NumericFormattingParams {
+  @JsonKey(name: 'decimal_sign')
+  final String decimalSign;
+
+  const NumericFormattingParams({
+    required this.decimalSign,
+  });
+
+  factory NumericFormattingParams.fromJson(Map<String, dynamic> json) =>
+      _$NumericFormattingParamsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$NumericFormattingParamsToJson(this);
+}
