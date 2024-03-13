@@ -846,3 +846,9 @@ class AccessList {
     required this.type,
     required this.tools,
   });
+
+  factory AccessList.fromJson(Map<String, dynamic> json) =>
+      _$AccessListFromJson(json);
+
+  Map<String, dynamic> toJson() => _$AccessListToJson(this);
+}
