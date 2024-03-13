@@ -788,3 +788,8 @@ class Favorites {
   final List<String> intervals;
   final List<String> chartTypes;
 
+  const Favorites({
+    required this.intervals,
+    required this.chartTypes,
+  });
+
