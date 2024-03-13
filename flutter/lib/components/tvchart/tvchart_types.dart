@@ -793,3 +793,8 @@ class Favorites {
     required this.chartTypes,
   });
 
+  factory Favorites.fromJson(Map<String, dynamic> json) =>
+      _$FavoritesFromJson(json);
+
+  Map<String, dynamic> toJson() => _$FavoritesToJson(this);
+}
