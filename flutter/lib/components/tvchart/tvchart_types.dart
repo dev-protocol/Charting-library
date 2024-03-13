@@ -425,3 +425,12 @@ class SearchSymbolResultItem {
 
   final String type;
 
+  const SearchSymbolResultItem({
+    required this.symbol,
+    required this.fullName,
+    required this.description,
+    required this.exchange,
+    required this.ticker,
+    required this.type,
+  });
+
