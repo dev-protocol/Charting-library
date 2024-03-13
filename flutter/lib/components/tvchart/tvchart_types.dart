@@ -776,3 +776,9 @@ class LoadingScreenOptions {
     this.backgroundColor,
   });
 
+  factory LoadingScreenOptions.fromJson(Map<String, dynamic> json) =>
+      _$LoadingScreenOptionsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$LoadingScreenOptionsToJson(this);
+}
+
