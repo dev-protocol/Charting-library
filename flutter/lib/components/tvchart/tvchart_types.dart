@@ -644,3 +644,17 @@ class ChartingLibraryWidgetOptions {
   @JsonKey(name: 'charts_storage_url')
   final String? chartsStorageUrl;
 
+  @JsonKey(name: 'charts_storage_api_version')
+  final String? chartsStorageApiVersion;
+
+  @JsonKey(name: 'client_id')
+  final String? clientId;
+
+  @JsonKey(name: 'user_id')
+  final String? userId;
+
+  @JsonKey(name: 'load_last_chart')
+  final bool? loadLastChart;
+
+  // TODO: Use custom class that handle Map<String, String | num | bool>
+  @JsonKey(name: 'studies_overrides')
