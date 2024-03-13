@@ -223,3 +223,57 @@ enum Timezone {
 
   @JsonValue('Europe/Tallinn')
   europeTallinn,
+
+  @JsonValue('Europe/Vilnius')
+  europeVilnius,
+
+  @JsonValue('Europe/Warsaw')
+  europeWarsaw,
+
+  @JsonValue('Europe/Zurich')
+  europeZurich,
+
+  @JsonValue('Pacific/Auckland')
+  pacificAuckland,
+
+  @JsonValue('Pacific/Chatham')
+  pacificChatham,
+
+  @JsonValue('Pacific/Fakaofo')
+  pacificFakaofo,
+
+  @JsonValue('Pacific/Honolulu')
+  pacificHonolulu,
+
+  @JsonValue('Pacific/Norfolk')
+  pacificNorfolk,
+
+  @JsonValue('US/Mountain')
+  usMountain,
+
+  /// Only use this when the parameters/function actually could accept timezone `exchange`
+  @JsonValue('exchange')
+  exchange,
+}
+
+enum SeriesFormat {
+  @JsonValue('price')
+  price,
+
+  @JsonValue('volume')
+  volume,
+}
+
+enum DataStatus {
+  @JsonValue('streaming')
+  streaming,
+
+  @JsonValue('endofday')
+  endOfDay,
+
+  @JsonValue('pulsed')
+  pulsed,
+
+  @JsonValue('delayed_streaming')
+  delayedStreaming,
+}
