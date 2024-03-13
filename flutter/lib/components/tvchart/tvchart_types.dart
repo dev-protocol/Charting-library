@@ -814,3 +814,9 @@ class TimeFrameItem {
     this.title,
   });
 
+  factory TimeFrameItem.fromJson(Map<String, dynamic> json) =>
+      _$TimeFrameItemFromJson(json);
+
+  Map<String, dynamic> toJson() => _$TimeFrameItemToJson(this);
+}
+
