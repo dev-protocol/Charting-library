@@ -852,3 +852,10 @@ class AccessList {
 
   Map<String, dynamic> toJson() => _$AccessListToJson(this);
 }
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class AccessListItem {
+  final String name;
+  final bool? grayed;
+
