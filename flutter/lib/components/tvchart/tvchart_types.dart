@@ -765,3 +765,14 @@ class CompareSymbol {
   Map<String, dynamic> toJson() => _$CompareSymbolToJson(this);
 }
 
+@immutable
+@JsonSerializable(includeIfNull: false)
+class LoadingScreenOptions {
+  final String? foregroundColor;
+  final String? backgroundColor;
+
+  const LoadingScreenOptions({
+    this.foregroundColor,
+    this.backgroundColor,
+  });
+
