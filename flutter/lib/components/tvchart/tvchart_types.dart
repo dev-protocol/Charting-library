@@ -434,3 +434,9 @@ class SearchSymbolResultItem {
     required this.type,
   });
 
+  factory SearchSymbolResultItem.fromJson(Map<String, dynamic> json) =>
+      _$SearchSymbolResultItemFromJson(json);
+
+  Map<String, dynamic> toJson() => _$SearchSymbolResultItemToJson(this);
+}
+
