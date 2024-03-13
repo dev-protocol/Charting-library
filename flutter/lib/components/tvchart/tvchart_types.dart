@@ -729,3 +729,9 @@ class ChartingLibraryWidgetOptions {
   Map<String, dynamic> toJson() => _$ChartingLibraryWidgetOptionsToJson(this);
 }
 
+@immutable
+@JsonSerializable(includeIfNull: false)
+class SavedStateMetaInfo {
+  final int uid;
+  final String name;
+  final String description;
