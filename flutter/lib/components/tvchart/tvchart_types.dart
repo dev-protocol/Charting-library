@@ -684,3 +684,48 @@ class ChartingLibraryWidgetOptions {
   @JsonKey(name: 'compare_symbols')
   final List<CompareSymbol>? compareSymbols;
 
+  const ChartingLibraryWidgetOptions({
+    required this.interval,
+    this.symbol,
+    this.autoSaveDelay,
+    this.autosize,
+    this.debug,
+    this.disabledFeatures,
+    this.drawingsAccess,
+    this.enabledFeatures,
+    this.fullscreen,
+    this.height,
+    required this.locale,
+    this.numericFormatting,
+    this.savedData,
+    this.savedDataMetaInfo,
+    this.studiesAccess,
+    this.studyCountLimit,
+    this.symbolSearchRequestDelay,
+    this.timeframe,
+    this.timezone,
+    this.toolbarBg,
+    this.width,
+    this.chartsStorageUrl,
+    this.chartsStorageApiVersion,
+    this.clientId,
+    this.userId,
+    this.loadLastChart,
+    this.studiesOverrides,
+    this.overrides,
+    this.snapshotUrl,
+    this.preset,
+    this.timeFrames,
+    this.customCssUrl,
+    this.favorites,
+    this.loadingScreen,
+    this.theme,
+    this.compareSymbols,
+  });
+
+  factory ChartingLibraryWidgetOptions.fromJson(Map<String, dynamic> json) =>
+      _$ChartingLibraryWidgetOptionsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ChartingLibraryWidgetOptionsToJson(this);
+}
+
