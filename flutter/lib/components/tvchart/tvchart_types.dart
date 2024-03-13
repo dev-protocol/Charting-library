@@ -667,3 +667,20 @@ class ChartingLibraryWidgetOptions {
   final String? snapshotUrl;
 
   final String? preset;
+
+  @JsonKey(name: 'time_frames')
+  final TimeFrameItem? timeFrames;
+
+  @JsonKey(name: 'custom_css_url')
+  final String? customCssUrl;
+
+  final Favorites? favorites;
+
+  @JsonKey(name: 'loading_screen')
+  final LoadingScreenOptions? loadingScreen;
+
+  final ChartTheme? theme;
+
+  @JsonKey(name: 'compare_symbols')
+  final List<CompareSymbol>? compareSymbols;
+
