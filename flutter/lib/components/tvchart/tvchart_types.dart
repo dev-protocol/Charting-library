@@ -859,3 +859,8 @@ class AccessListItem {
   final String name;
   final bool? grayed;
 
+  const AccessListItem({
+    required this.name,
+    this.grayed,
+  });
+
