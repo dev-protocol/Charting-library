@@ -747,3 +747,10 @@ class SavedStateMetaInfo {
 
   Map<String, dynamic> toJson() => _$SavedStateMetaInfoToJson(this);
 }
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class CompareSymbol {
+  final String symbol;
+  final String title;
+
