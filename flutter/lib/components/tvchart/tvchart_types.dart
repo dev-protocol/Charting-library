@@ -578,3 +578,48 @@ class LibrarySymbolInfo {
 
   Map<String, dynamic> toJson() => _$LibrarySymbolInfoToJson(this);
 }
+
+/// Some property is not here and you should add it on JS side if needed:
+/// ```md
+/// required on JS side
+/// - container
+/// - datafeed
+/// ```
+@immutable
+@JsonSerializable(includeIfNull: false)
+class ChartingLibraryWidgetOptions {
+  final String interval;
+
+  final String? symbol;
+
+  @JsonKey(name: 'auto_save_delay')
+  final int? autoSaveDelay;
+
+  final bool? autosize;
+
+  final bool? debug;
+
+  @JsonKey(name: 'disabled_features')
+  final List<String>? disabledFeatures;
+
+  @JsonKey(name: 'drawings_access')
+  final AccessList? drawingsAccess;
+
+  @JsonKey(name: 'enabled_features')
+  final List<String>? enabledFeatures;
+
+  final bool? fullscreen;
+
+  final int? height;
+
+  final String locale;
+
+  @JsonKey(name: 'numeric_formatting')
+  final NumericFormattingParams? numericFormatting;
+
+  @JsonKey(name: 'saved_data')
+  final Map<String, dynamic>? savedData;
+
+  @JsonKey(name: 'saved_data_meta_info')
+  final SavedStateMetaInfo? savedDataMetaInfo;
+
