@@ -782,3 +782,9 @@ class LoadingScreenOptions {
   Map<String, dynamic> toJson() => _$LoadingScreenOptionsToJson(this);
 }
 
+@immutable
+@JsonSerializable(includeIfNull: false)
+class Favorites {
+  final List<String> intervals;
+  final List<String> chartTypes;
+
