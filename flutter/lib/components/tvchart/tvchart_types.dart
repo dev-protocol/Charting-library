@@ -287,3 +287,106 @@ class PeriodParams {
 
   final int countBack;
 
+  final bool firstDataRequest;
+
+  const PeriodParams({
+    required this.from,
+    required this.to,
+    required this.countBack,
+    required this.firstDataRequest,
+  });
+
+  factory PeriodParams.fromJson(Map<String, dynamic> json) =>
+      _$PeriodParamsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$PeriodParamsToJson(this);
+}
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class Bar {
+  final int time;
+
+  final double open;
+
+  final double high;
+
+  final double low;
+
+  final double close;
+
+  final int? volume;
+
+  const Bar({
+    required this.time,
+    required this.open,
+    required this.high,
+    required this.low,
+    required this.close,
+    this.volume,
+  });
+
+  factory Bar.fromJson(Map<String, dynamic> json) => _$BarFromJson(json);
+
+  Map<String, dynamic> toJson() => _$BarToJson(this);
+}
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class Exchange {
+  final String value;
+
+  final String name;
+
+  final String desc;
+
+  const Exchange({
+    required this.value,
+    required this.name,
+    required this.desc,
+  });
+
+  factory Exchange.fromJson(Map<String, dynamic> json) =>
+      _$ExchangeFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ExchangeToJson(this);
+}
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class DatafeedConfiguration {
+  final List<Exchange>? exchanges;
+
+  @JsonKey(name: 'supported_resolutions')
+  final List<String>? supportedResolutions;
+
+  @JsonKey(name: 'currency_codes')
+  final List<String>? currencyCodes;
+
+  @JsonKey(name: 'supports_marks')
+  final bool? supportsMarks;
+
+  @JsonKey(name: 'supports_time')
+  final bool? supportsTime;
+
+  @JsonKey(name: 'supports_timescale_marks')
+  final bool? supportsTimescaleMarks;
+
+  @JsonKey(name: 'symbols_types')
+  final List<DatafeedSymbolType>? symbolsTypes;
+
+  const DatafeedConfiguration({
+    this.exchanges,
+    this.supportedResolutions,
+    this.currencyCodes,
+    this.supportsMarks,
+    this.supportsTime,
+    this.supportsTimescaleMarks,
+    this.symbolsTypes,
+  });
+
+  factory DatafeedConfiguration.fromJson(Map<String, dynamic> json) =>
+      _$DatafeedConfigurationFromJson(json);
+
+  Map<String, dynamic> toJson() => _$DatafeedConfigurationToJson(this);
+}
