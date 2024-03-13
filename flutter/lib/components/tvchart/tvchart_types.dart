@@ -864,3 +864,8 @@ class AccessListItem {
     this.grayed,
   });
 
+  factory AccessListItem.fromJson(Map<String, dynamic> json) =>
+      _$AccessListItemFromJson(json);
+
+  Map<String, dynamic> toJson() => _$AccessListItemToJson(this);
+}
