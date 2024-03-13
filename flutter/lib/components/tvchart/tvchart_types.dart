@@ -623,3 +623,24 @@ class ChartingLibraryWidgetOptions {
   @JsonKey(name: 'saved_data_meta_info')
   final SavedStateMetaInfo? savedDataMetaInfo;
 
+  @JsonKey(name: 'studies_access')
+  final AccessList? studiesAccess;
+
+  @JsonKey(name: 'study_count_limit')
+  final int? studyCountLimit;
+
+  @JsonKey(name: 'symbol_search_request_delay')
+  final int? symbolSearchRequestDelay;
+
+  final String? timeframe;
+
+  final Timezone? timezone;
+
+  @JsonKey(name: 'toolbar_bg')
+  final String? toolbarBg;
+
+  final int? width;
+
+  @JsonKey(name: 'charts_storage_url')
+  final String? chartsStorageUrl;
+
