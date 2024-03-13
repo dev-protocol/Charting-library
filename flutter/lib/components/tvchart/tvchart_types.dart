@@ -758,3 +758,10 @@ class CompareSymbol {
     required this.symbol,
     required this.title,
   });
+
+  factory CompareSymbol.fromJson(Map<String, dynamic> json) =>
+      _$CompareSymbolFromJson(json);
+
+  Map<String, dynamic> toJson() => _$CompareSymbolToJson(this);
+}
+
