@@ -735,3 +735,15 @@ class SavedStateMetaInfo {
   final int uid;
   final String name;
   final String description;
+
+  const SavedStateMetaInfo({
+    required this.uid,
+    required this.name,
+    required this.description,
+  });
+
+  factory SavedStateMetaInfo.fromJson(Map<String, dynamic> json) =>
+      _$SavedStateMetaInfoFromJson(json);
+
+  Map<String, dynamic> toJson() => _$SavedStateMetaInfoToJson(this);
+}
