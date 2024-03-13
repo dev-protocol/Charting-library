@@ -409,3 +409,19 @@ class DatafeedSymbolType {
   Map<String, dynamic> toJson() => _$DatafeedSymbolTypeToJson(this);
 }
 
+@immutable
+@JsonSerializable(includeIfNull: false)
+class SearchSymbolResultItem {
+  final String symbol;
+
+  @JsonKey(name: 'full_name')
+  final String fullName;
+
+  final String description;
+
+  final String exchange;
+
+  final String ticker;
+
+  final String type;
+
