@@ -754,3 +754,7 @@ class CompareSymbol {
   final String symbol;
   final String title;
 
+  const CompareSymbol({
+    required this.symbol,
+    required this.title,
+  });
