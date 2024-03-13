@@ -835,3 +835,14 @@ class NumericFormattingParams {
 
   Map<String, dynamic> toJson() => _$NumericFormattingParamsToJson(this);
 }
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class AccessList {
+  final AccessListType type;
+  final List<AccessListItem> tools;
+
+  const AccessList({
+    required this.type,
+    required this.tools,
+  });
