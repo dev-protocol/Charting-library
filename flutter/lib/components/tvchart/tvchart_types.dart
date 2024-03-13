@@ -658,3 +658,12 @@ class ChartingLibraryWidgetOptions {
 
   // TODO: Use custom class that handle Map<String, String | num | bool>
   @JsonKey(name: 'studies_overrides')
+  final Map<String, dynamic>? studiesOverrides;
+
+  // TODO: Use custom class that handle Map<String, String | num | bool>
+  final Map<String, dynamic>? overrides;
+
+  @JsonKey(name: 'snapshot_url')
+  final String? snapshotUrl;
+
+  final String? preset;
