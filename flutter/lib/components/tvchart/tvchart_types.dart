@@ -277,3 +277,13 @@ enum DataStatus {
   @JsonValue('delayed_streaming')
   delayedStreaming,
 }
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class PeriodParams {
+  final int from;
+
+  final int to;
+
+  final int countBack;
+
