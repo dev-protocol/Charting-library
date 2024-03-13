@@ -440,3 +440,8 @@ class SearchSymbolResultItem {
   Map<String, dynamic> toJson() => _$SearchSymbolResultItemToJson(this);
 }
 
+@immutable
+@JsonSerializable(includeIfNull: false)
+class LibrarySymbolInfo {
+  final String name;
+
