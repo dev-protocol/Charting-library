@@ -445,3 +445,136 @@ class SearchSymbolResultItem {
 class LibrarySymbolInfo {
   final String name;
 
+  @JsonKey(name: 'full_name')
+  final String fullName;
+
+  @JsonKey(name: 'base_name')
+  final List<String>? baseName;
+
+  final String? ticker;
+
+  final String description;
+
+  final String type;
+
+  final String session;
+
+  @JsonKey(name: 'session_display')
+  final String? sessionDisplay;
+
+  final String? holidays;
+
+  final String? corrections;
+
+  final String exchange;
+
+  @JsonKey(name: 'listed_exchange')
+  final String listedExchange;
+
+  final Timezone timezone;
+
+  final SeriesFormat format;
+
+  final double pricescale;
+
+  final double minmov;
+
+  final bool? fractional;
+
+  final double? minmove2;
+
+  @JsonKey(name: 'has_intraday')
+  final bool? hasIntraday;
+
+  @JsonKey(name: 'supported_resolutions')
+  final List<String> supportedResolutions;
+
+  @JsonKey(name: 'intraday_multipliers')
+  final List<String>? intradayMultipliers;
+
+  @JsonKey(name: 'has_seconds')
+  final bool? hasSeconds;
+
+  @JsonKey(name: 'has_ticks')
+  final bool? hasTicks;
+
+  @JsonKey(name: 'seconds_multipliers')
+  final List<String>? secondsMultipliers;
+
+  @JsonKey(name: 'has_daily')
+  final bool? hasDaily;
+
+  @JsonKey(name: 'has_weekly_and_monthly')
+  final bool? hasWeeklyAndMonthly;
+
+  @JsonKey(name: 'has_empty_bars')
+  final bool? hasEmptyBars;
+
+  @JsonKey(name: 'has_no_volume')
+  final bool? hasNoVolume;
+
+  @JsonKey(name: 'volume_precision')
+  final double? volumePrecision;
+
+  @JsonKey(name: 'data_status')
+  final String? dataStatus;
+
+  final bool? expired;
+
+  @JsonKey(name: 'expiration_date')
+  final int? expirationDate;
+
+  final String? sector;
+
+  final String? industry;
+
+  @JsonKey(name: 'currency_code')
+  final String? currencyCode;
+
+  @JsonKey(name: 'original_currency_code')
+  final String? originalCurrencyCode;
+
+  const LibrarySymbolInfo({
+    required this.name,
+    required this.fullName,
+    this.baseName,
+    this.ticker,
+    required this.description,
+    required this.type,
+    required this.session,
+    this.sessionDisplay,
+    this.holidays,
+    this.corrections,
+    required this.exchange,
+    required this.listedExchange,
+    required this.timezone,
+    required this.format,
+    required this.pricescale,
+    required this.minmov,
+    this.fractional,
+    this.minmove2,
+    this.hasIntraday,
+    required this.supportedResolutions,
+    this.intradayMultipliers,
+    this.hasSeconds,
+    this.hasTicks,
+    this.secondsMultipliers,
+    this.hasDaily,
+    this.hasWeeklyAndMonthly,
+    this.hasEmptyBars,
+    this.hasNoVolume,
+    this.volumePrecision,
+    this.dataStatus,
+    this.expired,
+    this.expirationDate,
+    this.sector,
+    this.industry,
+    this.currencyCode,
+    this.originalCurrencyCode,
+  });
+
+  factory LibrarySymbolInfo.fromJson(Map<String, dynamic> json) =>
+      _$LibrarySymbolInfoFromJson(json);
+
+  Map<String, dynamic> toJson() => _$LibrarySymbolInfoToJson(this);
+}
