@@ -390,3 +390,22 @@ class DatafeedConfiguration {
 
   Map<String, dynamic> toJson() => _$DatafeedConfigurationToJson(this);
 }
+
+@immutable
+@JsonSerializable(includeIfNull: false)
+class DatafeedSymbolType {
+  final String name;
+
+  final String value;
+
+  const DatafeedSymbolType({
+    required this.name,
+    required this.value,
+  });
+
+  factory DatafeedSymbolType.fromJson(Map<String, dynamic> json) =>
+      _$DatafeedSymbolTypeFromJson(json);
+
+  Map<String, dynamic> toJson() => _$DatafeedSymbolTypeToJson(this);
+}
+
