@@ -224,3 +224,5 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
   void initState() {
     super.initState();
 
+    _isLoading = true;
+    _isError = false;
