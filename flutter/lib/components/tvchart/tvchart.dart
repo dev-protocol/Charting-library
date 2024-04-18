@@ -90,3 +90,5 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
             //   desc: 'Indonesia Stock Exchange',
             // ),
           ],
+          supportedResolutions: ['1D'],
+          currencyCodes: ['IDR'],
