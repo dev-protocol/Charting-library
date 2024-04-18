@@ -270,3 +270,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     List<Widget> stackContent = [];
+
+    if (_isServerRunning) {
+      stackContent.add(
+        Column(
+          children: [
