@@ -111,3 +111,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
 
     controller.addJavaScriptHandler(
       handlerName: 'searchSymbols',
+      callback: (arguments) {
+        final String userInput = arguments[0];
+        // Only 1 exchange on example, not needed
+        // final String exchange = arguments[1];
+        final String symbolType = arguments[2];
