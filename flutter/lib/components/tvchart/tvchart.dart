@@ -360,3 +360,18 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                         url != null && url.host != localhostManager.uri.host;
                   });
                 },
+                onConsoleMessage: (controller, consoleMessage) {
+                  if (kDebugMode) {
+                    final level = consoleMessage.messageLevel.toString();
+                    final message = consoleMessage.message;
+                    // ignore: avoid_print
+                    print('Webview Console $level: $message');
+                  }
+                },
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
