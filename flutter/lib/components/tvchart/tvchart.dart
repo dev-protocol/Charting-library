@@ -283,3 +283,9 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                         icon: Icon(Icons.adaptive.arrow_back),
                         onPressed: () async {
                           var controller = _controller;
+                          if (controller != null) {
+                            // Somehow the chart is gone when you press back quick enough ?
+                            // See Webview Console output
+                            if (await controller.canGoBack()) {
+                              await controller.goBack();
+                            }
