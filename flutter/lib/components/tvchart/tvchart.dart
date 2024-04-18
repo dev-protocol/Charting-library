@@ -175,3 +175,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
         }
       },
     );
+
+    controller.addJavaScriptHandler(
+      handlerName: 'subscribeBars',
+      callback: (arguments) {
