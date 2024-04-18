@@ -279,3 +279,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                 ? Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
+                      IconButton(
+                        icon: Icon(Icons.adaptive.arrow_back),
+                        onPressed: () async {
+                          var controller = _controller;
