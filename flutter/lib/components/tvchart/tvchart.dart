@@ -317,3 +317,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                     transparentBackground: true,
                   ),
                 ),
+                // Pass all gesture to Webview
+                gestureRecognizers: {
+                  Factory(() => EagerGestureRecognizer()),
+                },
