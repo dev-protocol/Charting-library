@@ -403,3 +403,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
 
 Map<String, dynamic>? _savedData;
 
+@immutable
+class _OnTickInfo {
+  final LibrarySymbolInfo symbolInfo;
+  final String resolution;
+
