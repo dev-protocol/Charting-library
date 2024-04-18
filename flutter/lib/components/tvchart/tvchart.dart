@@ -310,3 +310,10 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                     path: _assetsPath,
                   ),
                 ),
+                initialOptions: InAppWebViewGroupOptions(
+                  crossPlatform: InAppWebViewOptions(
+                    clearCache: true,
+                    supportZoom: false,
+                    transparentBackground: true,
+                  ),
+                ),
