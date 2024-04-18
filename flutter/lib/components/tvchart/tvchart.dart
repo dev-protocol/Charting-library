@@ -375,3 +375,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
       );
     }
 
+    if (_isLoading) {
+      stackContent.add(const CircularProgressIndicator.adaptive());
+    }
+
