@@ -95,3 +95,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
           supportsMarks: false,
           supportsTime: true,
           supportsTimescaleMarks: true,
+          symbolsTypes: [
+            DatafeedSymbolType(
+              name: 'Index',
+              value: 'index',
+            ),
