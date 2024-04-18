@@ -325,3 +325,10 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                   _controller = controller;
                   _attachHandler();
                 },
+                onLoadStart: (controller, url) {
+                  setState(() {
+                    _isLoading = true;
+                    _isError = false;
+                    _isErrorMessage = '';
+                  });
+                },
