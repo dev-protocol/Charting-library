@@ -14,3 +14,7 @@ const _assetsPath = '/assets/tvchart/tvchart.html';
 class TVChart extends StatefulWidget {
   const TVChart({Key? key}) : super(key: key);
 
+  @override
+  _TVChartState createState() => _TVChartState();
+}
+
