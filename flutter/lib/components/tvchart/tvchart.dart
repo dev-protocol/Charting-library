@@ -128,3 +128,12 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
       callback: (arguments) {
         final String symbolName = arguments[0];
         final SymbolData? result = historical.getSymbol(symbolName);
+
+        if (result != null) {
+          return result.getLibrarySymbolInfo();
+        } else {
+          return 'Symbol not found!';
+        }
+      },
+    );
+
