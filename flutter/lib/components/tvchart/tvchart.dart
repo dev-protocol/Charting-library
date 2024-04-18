@@ -391,3 +391,12 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
       );
     }
 
+    // ignore: avoid_unnecessary_containers
+    return Container(
+      child: Stack(
+        alignment: Alignment.center,
+        children: stackContent,
+      ),
+    );
+  }
+}
