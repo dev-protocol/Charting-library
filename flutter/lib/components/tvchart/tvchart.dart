@@ -332,3 +332,13 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                     _isErrorMessage = '';
                   });
                 },
+                onLoadStop: (controller, url) {
+                  setState(() {
+                    _isLoading = false;
+                    _isError = false;
+                    // In case host not localhost (ex: got redirected to www.tradingview.com)
+                    // Give user UI to call back on Webview
+                    _showBack =
+                        url != null && url.host != localhostManager.uri.host;
+                  });
+                },
