@@ -154,3 +154,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
             tzMillisecond(periodParams.from * 1000),
             tzMillisecond(periodParams.to * 1000),
           );
+
+          return {
+            'bars': result
+                .map(
+                  (e) => Bar(
