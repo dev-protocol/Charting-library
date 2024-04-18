@@ -100,3 +100,11 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
               name: 'Index',
               value: 'index',
             ),
+            DatafeedSymbolType(
+              name: 'Stock',
+              value: 'stock',
+            ),
+          ],
+        );
+      },
+    );
