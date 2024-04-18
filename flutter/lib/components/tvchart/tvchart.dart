@@ -209,3 +209,6 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
         _onTickMap.remove(listenerGuid);
       },
     );
+
+    controller.addJavaScriptHandler(
+      handlerName: 'saveData',
