@@ -150,3 +150,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
         if (symbol == null) {
           return 'Symbol not found';
         } else {
+          var result = await symbol.getDataRange(
+            tzMillisecond(periodParams.from * 1000),
+            tzMillisecond(periodParams.to * 1000),
+          );
