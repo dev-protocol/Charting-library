@@ -408,3 +408,8 @@ class _OnTickInfo {
   final LibrarySymbolInfo symbolInfo;
   final String resolution;
 
+  const _OnTickInfo({
+    required this.symbolInfo,
+    required this.resolution,
+  });
+}
