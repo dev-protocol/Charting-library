@@ -379,3 +379,15 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
       stackContent.add(const CircularProgressIndicator.adaptive());
     }
 
+    if (_isError) {
+      stackContent.add(
+        Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.error),
+            Text(_isErrorMessage),
+          ],
+        ),
+      );
+    }
+
