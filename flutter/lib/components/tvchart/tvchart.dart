@@ -275,3 +275,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
       stackContent.add(
         Column(
           children: [
+            _showBack
+                ? Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
