@@ -184,3 +184,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
         final String resolution = arguments[1];
         final String listenerGuid = arguments[2];
 
+        if (_onTickMap.containsKey(listenerGuid)) {
+          // Dispose existing onTick with same ID
+        }
+
