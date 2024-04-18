@@ -212,3 +212,11 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
 
     controller.addJavaScriptHandler(
       handlerName: 'saveData',
+      callback: (arguments) {
+        if (arguments[0] is Map<String, dynamic>) {
+          _savedData = arguments[0];
+        }
+      },
+    );
+  }
+
