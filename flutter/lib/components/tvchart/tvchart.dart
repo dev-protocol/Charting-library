@@ -31,3 +31,18 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
     return _controller != null && !_isLoading && !_isError;
   }
 
+  // ignore: unused_element
+  void _callOnTick(String listenerGuid, Bar bar) {
+    if (_chartLoaded) {
+      final controller = _controller!;
+      final Map<String, dynamic> payload = {
+        'listenerGuid': listenerGuid,
+        'bar': bar,
+      };
+
+      controller.evaluateJavascript(
+        source: 'window.callOnTick(`${jsonEncode(payload)}`);',
+      );
+    }
+  }
+
