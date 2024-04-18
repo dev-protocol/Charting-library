@@ -167,3 +167,11 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                     volume: e.volume,
                   ),
                 )
+                .toList(),
+            'meta': {
+              'noData': result.isEmpty,
+            },
+          };
+        }
+      },
+    );
