@@ -26,3 +26,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
   String _isErrorMessage = '';
   bool _showBack = false;
   final Map<String, _OnTickInfo> _onTickMap = {};
+
+  bool get _chartLoaded {
+    return _controller != null && !_isLoading && !_isError;
+  }
+
