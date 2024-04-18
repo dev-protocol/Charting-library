@@ -146,3 +146,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
         // final String resolution = arguments[1];
         final PeriodParams periodParams = PeriodParams.fromJson(arguments[2]);
 
+        var symbol = historical.getSymbol(symbolInfo.name);
+        if (symbol == null) {
+          return 'Symbol not found';
+        } else {
