@@ -400,3 +400,6 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
     );
   }
 }
+
+Map<String, dynamic>? _savedData;
+
