@@ -197,3 +197,9 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
         // Use _callOnTick for returning realtime bar data
       },
     );
+
+    controller.addJavaScriptHandler(
+      handlerName: 'unsubscribeBars',
+      callback: (arguments) {
+        final String listenerGuid = arguments[0];
+
