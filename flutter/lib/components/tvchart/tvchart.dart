@@ -92,3 +92,6 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
           ],
           supportedResolutions: ['1D'],
           currencyCodes: ['IDR'],
+          supportsMarks: false,
+          supportsTime: true,
+          supportsTimescaleMarks: true,
