@@ -62,3 +62,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
           timezone: Timezone.asiaJakarta,
           autosize: true,
           autoSaveDelay: 1,
+          theme: Theme.of(context).brightness == Brightness.light
+              ? ChartTheme.light
+              : ChartTheme.dark,
+          savedData: _savedData,
