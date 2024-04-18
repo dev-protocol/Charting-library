@@ -296,3 +296,10 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                           }
                         },
                       ),
+                      Text(
+                        'Return to Chart',
+                        style: Theme.of(context).textTheme.headline6,
+                      ),
+                    ],
+                  )
+                : const SizedBox(),
