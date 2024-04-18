@@ -78,3 +78,15 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
         );
       },
     );
+
+    controller.addJavaScriptHandler(
+      handlerName: 'onReady',
+      callback: (arguments) {
+        return const DatafeedConfiguration(
+          exchanges: [
+            // Exchange(
+            //   name: 'IDX',
+            //   value: 'IDX',
+            //   desc: 'Indonesia Stock Exchange',
+            // ),
+          ],
