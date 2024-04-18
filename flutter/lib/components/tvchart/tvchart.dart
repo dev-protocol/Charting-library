@@ -188,3 +188,12 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
           // Dispose existing onTick with same ID
         }
 
+        _onTickMap[listenerGuid] = _OnTickInfo(
+          symbolInfo: symbolInfo,
+          resolution: resolution,
+        );
+
+        // Do request for realtime data
+        // Use _callOnTick for returning realtime bar data
+      },
+    );
