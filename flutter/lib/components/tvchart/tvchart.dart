@@ -73,3 +73,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
             'timezone_menu',
             'go_to_date',
             'timeframes_toolbar',
+          ],
+          enabledFeatures: const ['hide_left_toolbar_by_default'],
+        );
+      },
+    );
