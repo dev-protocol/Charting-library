@@ -140,3 +140,9 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
     controller.addJavaScriptHandler(
       handlerName: 'getBars',
       callback: (arguments) async {
+        final LibrarySymbolInfo symbolInfo =
+            LibrarySymbolInfo.fromJson(arguments[0]);
+        // Only 1 resolution on example, not needed
+        // final String resolution = arguments[1];
+        final PeriodParams periodParams = PeriodParams.fromJson(arguments[2]);
+
