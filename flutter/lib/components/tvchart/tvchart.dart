@@ -226,3 +226,6 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
 
     _isLoading = true;
     _isError = false;
+    _isServerRunning = localhostManager.isRunning;
+    if (!_isServerRunning) {
+      localhostManager.startServer().then((_) {
