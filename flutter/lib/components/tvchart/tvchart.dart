@@ -18,3 +18,11 @@ class TVChart extends StatefulWidget {
   _TVChartState createState() => _TVChartState();
 }
 
+class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
+  InAppWebViewController? _controller;
+  bool _isServerRunning = false;
+  bool _isLoading = false;
+  bool _isError = false;
+  String _isErrorMessage = '';
+  bool _showBack = false;
+  final Map<String, _OnTickInfo> _onTickMap = {};
