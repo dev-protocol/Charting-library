@@ -46,3 +46,6 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
     }
   }
 
+  void _attachHandler() {
+    final controller = _controller;
+    if (controller == null) return;
