@@ -123,3 +123,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
       },
     );
 
+    controller.addJavaScriptHandler(
+      handlerName: 'resolveSymbol',
+      callback: (arguments) {
+        final String symbolName = arguments[0];
+        final SymbolData? result = historical.getSymbol(symbolName);
