@@ -53,3 +53,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
     controller.addJavaScriptHandler(
       handlerName: 'start',
       callback: (arguments) {
+        return ChartingLibraryWidgetOptions(
+          debug: false,
+          locale: 'en',
+          symbol: 'IDX:COMPOSITE',
+          fullscreen: false,
