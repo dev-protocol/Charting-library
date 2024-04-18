@@ -321,3 +321,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                 gestureRecognizers: {
                   Factory(() => EagerGestureRecognizer()),
                 },
+                onWebViewCreated: (controller) {
+                  _controller = controller;
+                  _attachHandler();
+                },
