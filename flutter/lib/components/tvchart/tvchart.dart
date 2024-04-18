@@ -264,3 +264,6 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
       );
     }
 
+    super.didChangePlatformBrightness();
+  }
+
