@@ -289,3 +289,10 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                             if (await controller.canGoBack()) {
                               await controller.goBack();
                             }
+
+                            setState(() {
+                              _showBack = false;
+                            });
+                          }
+                        },
+                      ),
