@@ -159,3 +159,11 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
             'bars': result
                 .map(
                   (e) => Bar(
+                    time: e.dt.millisecondsSinceEpoch,
+                    open: e.open,
+                    high: e.high,
+                    low: e.low,
+                    close: e.close,
+                    volume: e.volume,
+                  ),
+                )
