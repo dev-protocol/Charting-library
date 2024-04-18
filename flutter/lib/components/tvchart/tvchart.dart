@@ -303,3 +303,10 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                     ],
                   )
                 : const SizedBox(),
+            Expanded(
+              child: InAppWebView(
+                initialUrlRequest: URLRequest(
+                  url: localhostManager.getUriWith(
+                    path: _assetsPath,
+                  ),
+                ),
