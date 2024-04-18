@@ -253,3 +253,14 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
     super.dispose();
   }
 
+  @override
+  void didChangePlatformBrightness() {
+    if (_chartLoaded) {
+      _controller!.evaluateJavascript(
+        source: WidgetsBinding.instance!.window.platformBrightness ==
+                Brightness.dark
+            ? 'window.toggleDarkTheme();'
+            : 'window.toggleLightTheme();',
+      );
+    }
+
