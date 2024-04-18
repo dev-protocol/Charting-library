@@ -116,3 +116,10 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
         // Only 1 exchange on example, not needed
         // final String exchange = arguments[1];
         final String symbolType = arguments[2];
+
+        final List<SearchSymbolResultItem> result =
+            historical.searchSymbol(userInput, symbolType);
+        return result;
+      },
+    );
+
