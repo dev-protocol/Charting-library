@@ -66,3 +66,10 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
               ? ChartTheme.light
               : ChartTheme.dark,
           savedData: _savedData,
+          disabledFeatures: const [
+            'header_fullscreen_button',
+            'header_screenshot',
+            'use_localstorage_for_settings',
+            'timezone_menu',
+            'go_to_date',
+            'timeframes_toolbar',
