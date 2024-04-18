@@ -248,3 +248,8 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
     _onTickMap.forEach((key, value) {
       // Dispose all onTick request/stream
     });
+
+    WidgetsBinding.instance!.removeObserver(this);
+    super.dispose();
+  }
+
