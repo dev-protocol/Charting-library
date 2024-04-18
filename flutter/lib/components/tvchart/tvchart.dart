@@ -351,3 +351,12 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
                         url != null && url.host != localhostManager.uri.host;
                   });
                 },
+                onLoadHttpError: (controller, url, statusCode, description) {
+                  setState(() {
+                    _isLoading = false;
+                    _isError = false;
+                    _isErrorMessage = 'HTTP $statusCode - $description';
+                    _showBack =
+                        url != null && url.host != localhostManager.uri.host;
+                  });
+                },
