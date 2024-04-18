@@ -58,3 +58,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
           locale: 'en',
           symbol: 'IDX:COMPOSITE',
           fullscreen: false,
+          interval: '1D',
+          timezone: Timezone.asiaJakarta,
+          autosize: true,
+          autoSaveDelay: 1,
