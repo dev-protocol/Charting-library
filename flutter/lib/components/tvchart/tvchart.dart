@@ -220,3 +220,7 @@ class _TVChartState extends State<TVChart> with WidgetsBindingObserver {
     );
   }
 
+  @override
+  void initState() {
+    super.initState();
+
